@@ -11,10 +11,7 @@ struct seqlist
     size_t length;
 };
 
-enum STATUS
-{
 
-};
 
 void clearlist(seqlist &l)
 {
