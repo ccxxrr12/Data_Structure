@@ -104,7 +104,7 @@ void Delete(int x)
         if (tmp->data == x)
         {
             ChangePtr(tmp);
-            delete (tmp); // 记得new用delete！！
+            delete (tmp); 
             return;
         }
         else if (tmp1->data == x)
@@ -138,18 +138,4 @@ void ReversePrint()
         q = q->prev;
     }
     cout << endl;
-}
-
-int main()
-{
-    InsertHead(2);
-    InsertTail(4);
-    InsertHead(6);
-    InsertTail(8);
-    InsertTail(3);
-    Print();
-    ReversePrint();
-    Delete(8);
-    Print();
-    ReversePrint();
 }
