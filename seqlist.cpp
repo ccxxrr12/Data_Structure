@@ -8,7 +8,7 @@ struct seqlist
 {
     int *data;
     size_t maxsize;
-    int length;
+    size_t length;
 };
 
 
@@ -93,7 +93,7 @@ bool getelem(seqlist &l, size_t pos, int &ee)
 
 size_t findelem(seqlist &l, const int &ee)
 {
-    for (int i = 0; i < l.length; i++)
+    for (size_t i = 0; i < l.length; i++)
     {
         if (ee == l.data[i])
             return i + 1;
