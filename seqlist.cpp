@@ -1,4 +1,4 @@
-#pragma once // 仅编译一次
+//#pragma once // 仅编译一次
 #include <bits/stdc++.h>
 using namespace std;
 #define initsize 5
@@ -8,7 +8,7 @@ struct seqlist
 {
     int *data;
     size_t maxsize;
-    size_t length;
+    int length;
 };
 
 
